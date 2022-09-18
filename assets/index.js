@@ -6,19 +6,20 @@ $("#currentDay").html(today);
 const saveButton = $(".saveBtn").on("click", function () {
     console.log(this);
     let time = $(this).parent().attr("id");
-    let text = $(this).siblings("description").val();
+    let text = $(this).siblings(".description").val();
+    localStorage.setItem(time, text);
 });
 
 function timeColor () {
    
     $(".time-block").each(function () {
-        let blockTime = parseInt($(this).attr("data-value").parseInt());
+        let blockTime = $(this).attr("data-value");
       
-        if (blockTime === currentTime) {
+        if (blockTime === currentHour) {
           $(this).addClass("present");
           $(this).removeClass("future");
           $(this).removeClass("past");
-        } else if (blockTime < currentTime) {
+        } else if (blockTime < currentHour) {
           $(this).addClass("past");
           $(this).removeClass("future");
           $(this).removeClass("present");
@@ -28,7 +29,6 @@ function timeColor () {
           $(this).removeClass("past");
         }
       });
-
     
 }
 
