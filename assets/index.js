@@ -1,5 +1,7 @@
 let today = moment().format("ddd, MMM Do YYYY");
 let currentHour = moment().hour();
+let blocks = $('.time-block.description');
+console.log(currentHour);
 
 $("#currentDay").html(today);
 
@@ -12,14 +14,14 @@ const saveButton = $(".saveBtn").on("click", function () {
 
 function timeColor () {
    
-    $(".time-block").each(function () {
-        let blockTime = $(this).attr("data-value");
-      
-        if (blockTime === currentHour) {
+    $(".time-block").each(function() {
+        let timeSlot = $(this).data("value");
+
+        if (timeSlot === currentHour) {
           $(this).addClass("present");
           $(this).removeClass("future");
           $(this).removeClass("past");
-        } else if (blockTime < currentHour) {
+        } else if (timeSlot < currentHour) {
           $(this).addClass("past");
           $(this).removeClass("future");
           $(this).removeClass("present");
@@ -32,4 +34,10 @@ function timeColor () {
     
 }
 
-// local storage
+timeColor();
+
+for (x = 0; x < blocks.length; x++) {
+
+    $(blocks[x].val(localStorage.getItem("")))
+
+}
