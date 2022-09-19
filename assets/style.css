@@ -22,6 +22,10 @@ textarea{
   border-bottom: 10px solid white;
 }
 
+.container {
+  padding-bottom: 3%;
+}
+
 .description{
   white-space: pre-wrap;
 }

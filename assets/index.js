@@ -1,21 +1,28 @@
 let today = moment().format("ddd, MMM Do YYYY");
 let currentHour = moment().hour();
-let blocks = $('.time-block.description');
+let blocks = $(".time-block");
+let textBoxes = document.getElementsByClassName("description");
 console.log(currentHour);
 
 $("#currentDay").html(today);
 
 const saveButton = $(".saveBtn").on("click", function () {
-    console.log(this);
-    let time = $(this).parent().attr("id");
+    
+    let time = $(this).parent().data("time");
     let text = $(this).siblings(".description").val();
     localStorage.setItem(time, text);
+    console.log(time, text);
 });
+
+$(".description").on("click", function() {
+    $(this).val("");
+})
+    
 
 function timeColor () {
    
     $(".time-block").each(function() {
-        let timeSlot = $(this).data("value");
+        let timeSlot = $(this).data("time");
 
         if (timeSlot === currentHour) {
           $(this).addClass("present");
@@ -30,6 +37,7 @@ function timeColor () {
           $(this).removeClass("present");
           $(this).removeClass("past");
         }
+
       });
     
 }
@@ -38,6 +46,6 @@ timeColor();
 
 for (x = 0; x < blocks.length; x++) {
 
-    $(blocks[x].val(localStorage.getItem("")))
+    $(blocks[x]).text(localStorage.content);
 
 }
