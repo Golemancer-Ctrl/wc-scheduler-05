@@ -46,6 +46,6 @@ timeColor();
 
 for (x = 0; x < blocks.length; x++) {
 
-    $(blocks[x]).text(localStorage.content);
+    $(blocks).eq(x).text(localStorage.content);
 
 }
