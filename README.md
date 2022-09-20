@@ -32,6 +32,8 @@ referencing the documentation will help me to avoid becoming out of touch with t
 
 Visit the webage live online at: [https://golemancer-ctrl.github.io/wc-scheduler-05/].
 
+![A screenshot of the daily planner, with the weekday displayed at the top center and the hour columns shown in color based on the time](./assets/images/golemancer-ctrl.github.io_wc-scheduler-05_.png)
+
 ## Credits
 
 - W3Schools
