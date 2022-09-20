@@ -23,14 +23,10 @@ date and times.  This project gave me an invaluable introduction into 3rd-Party 
 the fact that the APIs used in this project are no longer supported, they are still common in
 many websites, especially older ones.  In my career as a developer I will inevitably have to work
 with them, in some cases to modernize and replace in others to support and maintain.  Furthermore,
-there are many more modern 3rd-Party APIs which I will need to learn and use.  JQuery and the others
-we utilized in making this program have been around for many years and extensive support exists for
-them online.  Using them as an introductory point into dealing with 3rd-Party APIs is ideal.
+there are many more modern 3rd-Party APIs which I will need to learn and use.  JQuery and the others we utilized in making this program have been around for many years and extensive support exists for them online.  Using them as an introductory point into dealing with 3rd-Party APIs is ideal.
 
-In summary, I learned much on how to import and utilize 3rd-Party APIs, especially regarding usage of
-documentation to support what I may not be familiar with personally.  Getting into the habit of
-referencing the documentation will help me to avoid becoming out of touch with the most current iteration
-of a program, 3rd-Party or otherwise.
+In summary, I learned much on how to import and utilize 3rd-Party APIs, especially regarding usage of documentation to support what I may not be familiar with personally.  Getting into the habit of
+referencing the documentation will help me to avoid becoming out of touch with the most current iteration of a program, 3rd-Party or otherwise.
 
 ## Usage
 
