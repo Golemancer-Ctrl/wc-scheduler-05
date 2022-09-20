@@ -30,7 +30,7 @@ referencing the documentation will help me to avoid becoming out of touch with t
 
 ## Usage
 
-Visit the webage live online at: [insert hyperlink here].
+Visit the webage live online at: [https://golemancer-ctrl.github.io/wc-scheduler-05/].
 
 ## Credits
 
